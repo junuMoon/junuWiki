@@ -1,11 +1,11 @@
 ---
 created: 2026-03-18T08:52
-updated: 2026-03-18T08:52
+updated: 2026-03-18T10:04
 title: 트랜스포머(Transformer)
 ---
-트랜스포머는 self-attention을 통해 토큰 간 의존관계를 계산하고, feed-forward network를 통해 각 토큰의 내부 표현을 변환함으로써, 각 토큰이 문맥과 관계 정보를 반영한 표현을 갖도록 만드는 신경망 구조다.
+트랜스포머는 문맥을 고려한 예측을 가능하게 한 모델이다. 어텐션 레이어에서 토큰 간의 관계를 계산하고, 피드포워드 네트워크에서 각 토큰에 비선형 변환을 적용하여 토큰 표현을 정교하게 만든다.
 
-A transformer is a neural network architecture that uses self-attention to model dependencies between tokens and feed-forward networks to transform each token's internal representation, enabling tokens to carry context- and relation-aware representations.
+Transformer is a model that enables context-aware prediction. It computes relationships between tokens in the attention layer and refines token representations through nonlinear transformations in the feedforward network.
 
 ## Implementation
 
@@ -76,3 +76,9 @@ class SimpleTransformer(nn.Module):
 
         return self.norm(x)
 ```
+
+## RNN과 차이
+
+가장 큰 차이점은 문맥을 계산하는 방법에 있다. RNN은 히든 스테이트를 통해 문맥 정보를 순차적으로 전달하는 반면, 트랜스포머는 어텐션을 통해 토큰 간 관계를 병렬적으로 계산하여 문맥을 반영한다.
+
+While RNN sequentially passes contextual information through hidden states, Transformer captures context by computing relationships between tokens in parallel through attention.
