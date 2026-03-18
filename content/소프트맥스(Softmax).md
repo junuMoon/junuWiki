@@ -1,6 +1,6 @@
 ---
 created: 2026-03-18T22:27
-updated: 2026-03-18T22:39
+updated: 2026-03-18T23:36
 ---
 Softmax는 임의의 실수 벡터를 확률 분포로 변환하는 함수다. 각 원소에 지수함수를 적용한 뒤 전체 합으로 나누어, 모든 값이 0과 1 사이에 있고 총합이 1이 되도록 정규화한다. 이를 통해 모델의 raw output인 logit을 "어디에 얼마나 집중할지" 또는 "각 클래스일 확률이 얼마인지"처럼 해석 가능한 가중치로 바꿀 수 있다.
 
@@ -18,13 +18,17 @@ $$
 ## Implementation
 
 ```python
-import torch
-import torch.nn.functional as F
+import numpy as np
 
 
-logits = torch.tensor([1.2, 0.3, 2.1])
-probs = F.softmax(logits, dim=0)
+def softmax(x):
+    exp_x = np.exp(x)
+    return exp_x / np.sum(exp_x)
 
-print(probs)        # tensor([0.2558, 0.1040, 0.6402])
-print(probs.sum())  # tensor(1.)
+
+logits = np.array([1.2, 0.3, 2.1])
+probs = softmax(logits)
+
+print(probs)        # [0.25582435 0.1040533  0.64012235]
+print(probs.sum())  # 1.0
 ```
