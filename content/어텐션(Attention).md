@@ -1,6 +1,6 @@
 ---
 created: 2026-03-18T22:02
-updated: 2026-03-18T22:22
+updated: 2026-03-18T22:33
 ---
 Attention은 각 토큰이 문맥 내 다른 토큰들에 얼마나 주의를 기울일지를 계산하는 메커니즘이다. 입력 시퀀스의 각 토큰은 Query, Key, Value 벡터로 변환되며, 한 토큰의 Query와 다른 토큰들의 Key의 내적을 통해 attention score를 계산한다. 이 score를 softmax로 정규화해 가중치로 만든 뒤, 이를 Value에 적용해 weighted sum함으로써 문맥이 반영된 새로운 표현을 얻는다. 즉, Attention은 각 토큰이 입력의 어떤 부분에 더 집중해야 하는지를 동적으로 결정하는 방식이다.
 
@@ -15,6 +15,12 @@ $$
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
 $$
+
+### Why divide by $\sqrt{d_k}$?
+
+$d_k$가 커질수록 Query와 Key의 내적값은 더 많은 항을 더하게 되므로 함께 커지는 경향이 있다. 이 큰 값을 그대로 softmax에 넣으면 출력 분포가 지나치게 뾰족해질 수 있고, 그 결과 gradient가 작아져 학습이 불안정해질 수 있다. 따라서 $\sqrt{d_k}$로 나누어 score의 크기를 적절한 범위로 조정하면 softmax의 과도한 포화를 막고 학습을 더 안정적으로 만들 수 있다.
+
+As $d_k$ increases, the dot product between Query and Key tends to grow because more terms are summed together. If these large values are passed directly into softmax, the output distribution can become too sharp, which may lead to small gradients and unstable training. Dividing by $\sqrt{d_k}$ scales the scores to a more stable range and helps prevent softmax from becoming overly saturated.
 
 ## Implementation
 
