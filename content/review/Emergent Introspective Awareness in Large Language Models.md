@@ -1,8 +1,8 @@
 ---
 title: Emergent Introspective Awareness in Large Language Models
 created: 2025-12-02T02:04:00
-updated: 2026-03-22T21:01
-draft: true
+updated: 2026-03-22T21:17
+draft: false
 ---
 이 글 전체의 질문은 결국 이거다.
 모델이 자기 상태를 진짜로 읽는가, 아니면 그냥 그럴듯하게 자기 얘기를 꾸며내는가.

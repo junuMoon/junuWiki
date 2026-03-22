@@ -1,10 +1,8 @@
 ---
 title: Let's reproduce GPT-2 (124M)
 created: 2024-06-16T17:17:54+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-# Let's reproduce GPT-2 (124M) - Andrej Capathy
-
 https://www.youtube.com/watch?v=l8pRSuU81PU&t=271s
 
 - 임베딩 레이어란: 이산적인(discrete) 입력을 연속적인(continuous) 벡터 공간으로 변환하는 레이어

@@ -1,10 +1,8 @@
 ---
 title: fluent_python
 created: 2024-01-03T20:27:39+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-# Fluent Python - Luciano Ramhalo
-
 ## Part 3. Classes and Protocols
 
 ### Goose Typing

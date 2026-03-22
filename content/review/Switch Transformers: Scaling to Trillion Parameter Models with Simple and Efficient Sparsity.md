@@ -1,9 +1,8 @@
 ---
 title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
 created: 2024-04-24T12:13:15+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-# Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
 - https://arxiv.org/pdf/2101.03961
 - we instead propose a sparsely-activated expert model
 - Scaling properties and a benchmark against the strongly tuned T5 model (Raffel et al., 2019) where we measure 7x+ pre-training speedups while still using the same FLOPS per token 

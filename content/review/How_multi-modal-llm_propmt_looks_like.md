@@ -1,9 +1,8 @@
 ---
 title: How_multi-modal-llm_propmt_looks_like
 created: 2024-01-22T19:51:10+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-## MiniGPT-v2: Large Language Model As a Unified Interface for Vision-Language Multi-task Learning
 - https://arxiv.org/pdf/2310.09478.pdf
 - We aim to project all into the language model space. However, for higher-resolution images such as 448x448, projecting all the image tokens results in a very long-sequence input (e.g., 1024 tokens) and significantly lowers the training and inference efficiency. Hence, we simply concatenate 4 adjacent visual tokens in the embedding space and project them together into one single embedding in the same feature space of the large language model, thus reducing the number of visual input tokens by 4 times.
 - General input format. We follow the LLaMA-2 conversation template design and adapt it for the multi-modal instructional template. The template is denoted as follows,

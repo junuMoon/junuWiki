@@ -1,9 +1,8 @@
 ---
 title: Direct_Preference_Optimization
 created: 2024-02-07T17:45:54+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-# Direct Preference Optimization
 - https://arxiv.org/html/2305.18290v2
 - to leverage an analytical mapping from reward functions to optimal policies, which enables us to transform a loss function over reward functions into a loss function over policies.
 - the DPO update increases the relative log probability of preferred to dispreferred responses, but it incorporates a dynamic, per-example importance weight that prevents the model degeneration that we find occurs with a naive probability ratio objective.

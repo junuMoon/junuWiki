@@ -1,9 +1,8 @@
 ---
 title: LoRA:Low-Rank_Adaptation_of_Large_Languag_ Models
 created: 2024-01-17T11:10:57+09:00
-updated: 2026-03-22T20:23
+updated: 2026-03-22T21:17
 ---
-# LoRA: Low-Rank Adaptation of Large Language Models
 
 $$\max_{\Theta} \sum_{(x, y) \in \mathcal{Z}} \sum_{t=1}^{|y|} \log ( p_{\Phi_0 + \Delta \Phi(\Theta)}(y_t \mid x, y_{<}{t}) )$$
 
