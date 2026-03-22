@@ -16,7 +16,7 @@ const config: QuartzConfig = {
     locale: "ko-KR",
     baseUrl: "junumoon.github.io/junuWiki",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
