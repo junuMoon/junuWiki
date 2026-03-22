@@ -1,10 +1,8 @@
 ---
 title: On the Biology of a Large Language Model
 created: 2025-09-22T00:00
-updated: 2026-03-22T20:43
+updated: 2026-03-22T20:56
 ---
-# On the Biology of a Large Language Model
-
 - https://transformer-circuits.pub/2025/attribution-graphs/biology.html
 - Anthropic가 Claude 3.5 Haiku 내부를 attribution graph로 뜯어본 글.
 - 내가 읽은 느낌으로는 "feature를 봤다"보다 "feature 사이 경로를 보기 시작했다"가 더 핵심.
