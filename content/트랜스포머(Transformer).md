@@ -1,6 +1,6 @@
 ---
 created: 2026-03-18T08:52
-updated: 2026-03-20T09:33
+updated: 2026-03-22T17:07
 title: 트랜스포머(Transformer)
 ---
 트랜스포머는 문맥을 고려한 예측을 가능하게 한 모델이다. [[어텐션(Attention)]] 레이어에서 토큰 간의 관계를 계산하고, 피드포워드 네트워크에서 각 토큰에 비선형 변환을 적용하여 토큰 표현을 정교하게 만든다.
@@ -9,9 +9,9 @@ Transformer is a model that enables context-aware prediction. It computes relati
 
 ## RNN과 차이
 
-가장 큰 차이점은 문맥을 계산하는 방법에 있다. RNN은 히든 스테이트를 통해 문맥 정보를 순차적으로 전달하는 반면, 트랜스포머는 어텐션을 통해 토큰 간 관계를 병렬적으로 계산하여 문맥을 반영한다.
+가장 큰 차이점은 토큰을 처리하는 방식과 문맥을 계산하는 방식에 있다. RNN은 토큰을 하나씩 순차적으로 처리하며 히든 스테이트로 문맥을 전달하고, 트랜스포머는 토큰들을 한 번에 보고 어텐션으로 토큰 간 관계를 병렬적으로 계산한다.
 
-The biggest difference lies in how they compute context. While RNN sequentially passes contextual information through hidden states, Transformer captures context by computing relationships between tokens in parallel through attention.
+The biggest difference lies in how they process tokens and compute context. RNN processes tokens one by one and passes context through hidden states, while Transformer looks at all tokens at once and computes relationships between them in parallel through attention.
 
 ## Implementation
 
@@ -82,4 +82,3 @@ class SimpleTransformer(nn.Module):
 
         return self.norm(x)
 ```
-
