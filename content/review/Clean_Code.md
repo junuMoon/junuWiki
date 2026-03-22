@@ -1,7 +1,7 @@
 ---
 title: Clean_Code
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-06-14T03:07:16+09:00
+updated: 2026-03-22T20:23
 ---
 # Clean Code
 

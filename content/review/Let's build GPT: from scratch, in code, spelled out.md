@@ -1,7 +1,7 @@
 ---
 title: "Let's build GPT: from scratch, in code, spelled out"
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-05-19T12:12:12+09:00
+updated: 2026-03-22T20:23
 ---
 https://www.youtube.com/watch?v=kCc8FmEb1nY&t=4948s
 

@@ -1,7 +1,7 @@
 ---
 title: fluent_python
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-01-03T20:27:39+09:00
+updated: 2026-03-22T20:23
 ---
 # Fluent Python - Luciano Ramhalo
 

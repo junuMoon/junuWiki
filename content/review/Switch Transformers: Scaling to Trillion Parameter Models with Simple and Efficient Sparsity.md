@@ -1,7 +1,7 @@
 ---
 title: "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity"
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-04-24T12:13:15+09:00
+updated: 2026-03-22T20:23
 ---
 # Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
 - https://arxiv.org/pdf/2101.03961

@@ -1,7 +1,7 @@
 ---
 title: Direct_Preference_Optimization
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-02-07T17:45:54+09:00
+updated: 2026-03-22T20:23
 ---
 # Direct Preference Optimization
 - https://arxiv.org/html/2305.18290v2

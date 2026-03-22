@@ -1,7 +1,7 @@
 ---
 title: LoRA:Low-Rank_Adaptation_of_Large_Languag_ Models
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-01-17T11:10:57+09:00
+updated: 2026-03-22T20:23
 ---
 # LoRA: Low-Rank Adaptation of Large Language Models
 

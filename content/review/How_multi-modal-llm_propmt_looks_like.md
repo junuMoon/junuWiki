@@ -1,7 +1,7 @@
 ---
 title: How_multi-modal-llm_propmt_looks_like
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-01-22T19:51:10+09:00
+updated: 2026-03-22T20:23
 ---
 ## MiniGPT-v2: Large Language Model As a Unified Interface for Vision-Language Multi-task Learning
 - https://arxiv.org/pdf/2310.09478.pdf

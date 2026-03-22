@@ -1,7 +1,7 @@
 ---
 title: Efficient Memory Management for Large Language Model Serving with PagedAttention
-created: 2026-03-22T20:04
-updated: 2026-03-22T20:06
+created: 2024-04-24T13:40:41+09:00
+updated: 2026-03-22T20:23
 ---
 # Efficient Memory Management for Large Language Model Serving with PagedAttention
 - https://arxiv.org/pdf/2309.06180
